@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<!--    基础配置，界面中的总布局，宽度高度设置为自适应屏幕，方向设置为垂直(所以里面的控件将按照垂直分布)-->
+    <LinearLayout
+        android:id="@+id/a11_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#FF0033"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginBottom="200dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0066FF"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="#00FF33"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+<!--第二个控件，gravity是内部对其方式-->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#871F78"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#CD7F32"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#3399ff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

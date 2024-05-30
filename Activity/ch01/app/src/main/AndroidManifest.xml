@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ch01"
+        tools:targetApi="31">
+
+<!--        <activity android:name=".TestActivity"></activity>-->
+
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B"
+            android:launchMode="standard"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<!--        android:exported属性用于设置该组件是否可以由其他应用程序中的组件启动或者访问。-->
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A"
+            android:launchMode="standard" />
+
+<!--        主程序的入口-->
+        <activity
+            android:name=".EventActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestActivity"/>
+
+    </application>
+
+</manifest>

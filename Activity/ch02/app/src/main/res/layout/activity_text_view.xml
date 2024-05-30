@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textColor="#0066ff"
+        android:textSize="28sp"/>
+    <!--1.这里的"@string/tv_test1"是在res-values-strings内写好的属性：
+    <string name="tv_test1">小方哥哥</string>
+    也可以直接写成 android:text="小方哥哥"
+    2.字体的单位是sp，考虑碎片化-->
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="100dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textColor="#39AA55"
+        android:textSize="30sp"/>
+    <!--maxlines 限制文字只能占一行，elliosize设置显示不下则用省略号，可选择省略哪一部分  -->
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/icon_arrow_off"
+        android:textColor="#000000"
+        android:drawablePadding="10dp"
+        android:textSize="28sp"/>
+    <!--maxlines 限制文字只能占一行，elliosize设置显示不下则用省略号，可选择省略哪一部分
+    drawableRight指的是在右边放入一张图片，需要提前把图片放到相应文件夹.-app-src-main-res-drawable-->
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乌拉拉"
+        android:textColor="#19EEFF"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"/>
+    <!--layout_marginTop指的是上面的间隔  -->
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玛卡巴卡"
+        android:textColor="#50AADD"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#50AADD"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小方哥哥小方哥哥小方哥哥小方哥哥小方哥哥小方哥哥小方哥哥小方哥哥小方哥哥"
+        android:textColor="#FFCC00"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <!--获得焦点时实现跑马灯    -->
+
+
+</LinearLayout>

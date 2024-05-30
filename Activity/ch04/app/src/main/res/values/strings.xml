@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ch04</string>
+    <string name="Display">textView</string>
+    <string name="左">button</string>
+    <string name="右">button2</string>
+    <string name="imageView1">image</string>
+    <string name="checkBox1">语文</string>
+    <string name="checkBox2">数学</string>
+    <string name="checkBox3">英语</string>
+    <string name="textView1">Display</string>
+    <string name="button1">左</string>
+    <string name="button2">右</string>
+    <string name="switch1">开关</string>
+    <string name="button3">确认</string>
+    <string name="radioButton1">Android</string>
+    <string name="radioButton2">apple</string>
+    <string name="editTextNumber">请输入数值</string>
+</resources>
